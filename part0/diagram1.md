@@ -32,7 +32,7 @@ sequenceDiagram
 
     Note right of browser: The browser tries to fetch favicon.ico
     
-    browser-->server: GET https://studies.cs.helsinki.fi/favicon.ico
+    browser-->>server: GET https://studies.cs.helsinki.fi/favicon.ico
     activate server
     server-->>browser: 404 Not Found
     Note right of browser: The browser executes the callback function that renders the notes
